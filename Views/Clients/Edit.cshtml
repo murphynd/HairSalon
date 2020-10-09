@@ -11,18 +11,19 @@
 @using (Html.BeginForm())
 {
     @Html.HiddenFor(model => model.ClientId)
-    
-    <p>Type of Stylist</p>
+      <p>Pick the Stylist</p>
     @Html.DropDownList("StylistId")
-    <p>Resturant Name</p>
-    @Html.EditorFor(model => model.Description)
-    
-    <p>Address of Resturant</p>
-    @Html.EditorFor(model => model.Address)
-
-    @Html.LabelFor(model => model.Stylist)
-    @Html.DropDownList("StylistId")
-
+    <p>Client Name</p>
+    @Html.EditorFor(model => model.Description);
+    <p>Address of Client</p>
+     @Html.EditorFor(model => model.Address);
+     <p>City</p>
+     @Html.EditorFor(model => model.City);
+     <p>State</p>
+     @Html.EditorFor(model => model.State);
+     <p>Email</p>
+     @Html.EditorFor(model => model.Email);
+   
     <input type="submit" value="Save" />
 }
 <br>

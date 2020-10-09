@@ -5,7 +5,12 @@
 @using Salon.Models;
 @model Salon.Models.Client;
 <h2>@Html.DisplayFor(model => model.Description)</h2>
-<h3>@Html.DisplayFor(model => model.Address)</h3>
+<h3>Address:</h3>
+<p>@Html.DisplayFor(model => model.Address)
+@Html.DisplayFor(model => model.City)
+@Html.DisplayFor(model => model.State)</p>
+<h3>Email:</h3>
+<a href="mailto:@Html.DisplayFor(model => model.Email)">@Html.DisplayFor(model => model.Email)</a>
 
 
 

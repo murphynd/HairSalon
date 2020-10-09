@@ -12,8 +12,12 @@
 {
     @Html.HiddenFor(model => model.StylistId)
 
-    @Html.LabelFor(model => model.Name)
+     <p>Stylist Name</p>
     @Html.EditorFor(model => model.Name)
+    <p>Stylist Details</p>
+    @Html.EditorFor(model => model.Details)
+     <p>Stylist Image URL</p>
+    @Html.EditorFor(model => model.Image)
 
     <input type="submit" value="Save" />
 }
