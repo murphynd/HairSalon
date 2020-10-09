@@ -8,13 +8,13 @@
 
 @using (Html.BeginForm())
 {
-    <p>Type of Stylist</p>
+    <p>Pick the Stylist</p>
     @Html.DropDownList("StylistId")
-    <p>Resturant Name</p>
+    <p>Client Name</p>
     @Html.TextBoxFor(model => model.Description)
-    <p>image Link of Resturant</p>
+    <p>image Link of Client</p>
     @Html.TextBoxFor(model => model.Image)
-    <p>Address of Resturant</p>
+    <p>Address of Client</p>
     @Html.TextBoxFor(model => model.Address)
  
     <br>

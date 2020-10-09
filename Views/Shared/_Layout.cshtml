@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="~/css/styles.css">
-    @* <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet"> *@
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
   </head>
   <body style="font-family: 'Montserrat', sans-serif; ">
     <div class="container">
@@ -17,11 +17,9 @@
       <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <button class="w3-bar-item w3-button"><i class="fa fa-heart">@Html.ActionLink("Home", "Index", "Home")</i></button>
+    <button class="w3-bar-item w3-button"><i class="fa fa-heart"></i>@Html.ActionLink("Home", "Index", "Home")</button>
     <button class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-cutlery"></i>@Html.ActionLink("Stylists", "Index","Stylists")</button>
     <button class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> @Html.ActionLink("Clients", "Index","Clients")</button>
-    <button class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-pencil-square-o"></i> </button>
-    <button class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red"><i class="fa fa-search"></i></button>
       </div>
       </div>
       <br>

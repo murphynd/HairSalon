@@ -36,7 +36,7 @@ namespace Salon.Controllers
 
     public ActionResult Details(int id)
     {
-      Stylist thisStylist = _db.Stylists.FirstOrDefault(stylist => stylist.StylistId == id);
+      Stylist thisStylist = _db.Stylists.Include(stylists => stylists.Clients).FirstOrDefault(stylist => stylist.StylistId == id);
       return View(thisStylist);
     }
 
