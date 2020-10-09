@@ -17,9 +17,9 @@
       <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <button class="w3-bar-item w3-button"><i class="fa fa-heart"></i></button>
-    <button class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-cutlery"></i></button>
-    <button class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> </button>
+    <button class="w3-bar-item w3-button"><i class="fa fa-heart">@Html.ActionLink("Home", "Index", "Home")</i></button>
+    <button class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-cutlery"></i>@Html.ActionLink("Stylists", "Index","Stylists")</button>
+    <button class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> @Html.ActionLink("Clients", "Index","Clients")</button>
     <button class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-pencil-square-o"></i> </button>
     <button class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red"><i class="fa fa-search"></i></button>
       </div>
