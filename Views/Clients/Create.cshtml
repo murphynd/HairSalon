@@ -11,9 +11,16 @@
     <p>Pick the Stylist</p>
     @Html.DropDownList("StylistId")
     <p>Client Name</p>
-    @Html.TextBoxFor(model => model.Description)
+    @Html.TextBoxFor(model => model.Description);
     <p>Address of Client</p>
-    @Html.TextBoxFor(model => model.Address)
+    @Html.DisplayFor(model => model.Address);
+     @Html.TextBoxFor(model => model.Address);
+     <p>City</p>
+     @Html.TextBoxFor(model => model.City);
+     <p>State</p>
+     @Html.TextBoxFor(model => model.State);
+     <p>Email</p>
+     @Html.TextBoxFor(model => model.Email);
  
     <br>
     <br>
