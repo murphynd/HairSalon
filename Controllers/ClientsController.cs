@@ -74,13 +74,13 @@ namespace Salon.Controllers
       _db.SaveChanges();
       return RedirectToAction("Index");
     }
-    // [HttpPost] //client search bar functionality
-    // public ActionResult Index(string Search)
-    // {
-    //   List<Client> model = _db.Clients.Include(clients => clients.Stylist).Where(x => x.Description.Contains(Search)).ToList();
-    //   List<Client> SortedList = model.OrderBy(o => o.Description).ToList();
-    //   return View("Index", SortedList);
-    // }
+    [HttpPost] //client search bar functionality
+    public ActionResult Index(string Search)
+    {
+      List<Client> model = _db.Clients.Include(clients => clients.Stylist).Where(x => x.Description.Contains(Search)).ToList();
+      List<Client> SortedList = model.OrderBy(o => o.Description).ToList();
+      return View("Index", SortedList);
+    }
 
   }
 }
