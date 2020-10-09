@@ -6,8 +6,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Threading.Tasks;
 using System;
-
-
 namespace Salon.Controllers
 {
   public class ClientsController : Controller
