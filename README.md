@@ -6,7 +6,7 @@
 
 ## Description
 
-A website where you can enter places you've been to create an online travel diary.
+A website where you Can Add Sylists and Clients to a database.
 
 <!-- Brainstorming
 - able to add a list of stylists working at the salon, and for each stylist, add clients who see that stylist.
@@ -55,14 +55,11 @@ No Known Bugs
 
 ## Technologies Used
 
-Project Specific
-
-- MSTest
-
 Main Programs
 
 - C# / ASP.NET
 - MCV
+- SQL
 
 ### Other Links
 
