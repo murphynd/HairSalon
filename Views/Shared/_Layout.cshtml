@@ -17,12 +17,9 @@
         <nav class="navbar fixed-top navbar-light bg-light">
             <a class="navbar-brand" href="\">Eau Claire's</a>
             <button class="w3-bar-item w3-button"><i class="fa fa-h-square"></i>@Html.ActionLink("Home", "Index", "Home")</button>
-
             <button class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user-md"></i>@Html.ActionLink("Clients", "Index","Clients")</button>
             <button class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-users"></i> @Html.ActionLink("Stylists", "Index","Stylists")</button>
-
         </nav>
-
         @RenderBody()
     </div>
 </body>

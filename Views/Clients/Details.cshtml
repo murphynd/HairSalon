@@ -7,8 +7,8 @@
 <h2>@Html.DisplayFor(model => model.Description)</h2>
 <h3>Address:</h3>
 <p>@Html.DisplayFor(model => model.Address)
-@Html.DisplayFor(model => model.City)
-@Html.DisplayFor(model => model.State)</p>
+  @Html.DisplayFor(model => model.City)
+  @Html.DisplayFor(model => model.State)</p>
 <h3>Email:</h3>
 <a href="mailto:@Html.DisplayFor(model => model.Email)">@Html.DisplayFor(model => model.Email)</a>
 
@@ -19,4 +19,3 @@
 <Button>@Html.ActionLink("Back to list", "Index")</Button>
 <Button>@Html.ActionLink("Edit Client", "Edit", new { id = Model.ClientId })</button>
 <Button>@Html.ActionLink("Delete Client", "Delete", new { id = Model.ClientId })</Button>
-<Button>@Html.ActionLink("Add new review", "Create","Reviews")</button>
