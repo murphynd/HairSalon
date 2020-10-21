@@ -7,7 +7,7 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
- SET NAMES utf8 ;
+SET NAMES utf8 ;
 /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
 /*!40103 SET TIME_ZONE='+00:00' */;
 /*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
@@ -21,16 +21,26 @@
 
 DROP TABLE IF EXISTS `Clients`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
-CREATE TABLE `Clients` (
-  `ClientID` int(11) NOT NULL AUTO_INCREMENT,
-  `Description` varchar(450) DEFAULT NULL,
-  `Address` varchar(450) DEFAULT NULL,
-  `StylistID` int(11) DEFAULT '0',
-  `City` varchar(200) DEFAULT NULL,
-  `State` varchar(3) DEFAULT NULL,
-  `Email` varchar(200) DEFAULT NULL,
-  PRIMARY KEY (`ClientID`)
+SET character_set_client
+= utf8mb4 ;
+CREATE TABLE `Clients`
+(
+  `ClientID` int
+(11) NOT NULL AUTO_INCREMENT,
+  `Description` varchar
+(450) DEFAULT NULL,
+  `Address` varchar
+(450) DEFAULT NULL,
+  `StylistID` int
+(11) DEFAULT '0',
+  `City` varchar
+(200) DEFAULT NULL,
+  `State` varchar
+(3) DEFAULT NULL,
+  `Email` varchar
+(200) DEFAULT NULL,
+  PRIMARY KEY
+(`ClientID`)
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -40,13 +50,20 @@ CREATE TABLE `Clients` (
 
 DROP TABLE IF EXISTS `Stylists`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
-CREATE TABLE `Stylists` (
-  `StylistId` int(11) NOT NULL AUTO_INCREMENT,
-  `Name` varchar(450) DEFAULT NULL,
-  `Details` varchar(450) DEFAULT NULL,
-  `Image` varchar(2000) DEFAULT NULL,
-  PRIMARY KEY (`StylistId`)
+SET character_set_client
+= utf8mb4 ;
+CREATE TABLE `Stylists`
+(
+  `StylistId` int
+(11) NOT NULL AUTO_INCREMENT,
+  `Name` varchar
+(450) DEFAULT NULL,
+  `Details` varchar
+(450) DEFAULT NULL,
+  `Image` varchar
+(2000) DEFAULT NULL,
+  PRIMARY KEY
+(`StylistId`)
 ) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
